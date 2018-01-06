@@ -1,5 +1,5 @@
 # Gifted Form
-Form component for React-Native
+Form component for React-Native using ModalBox
 
 
 ![](https://raw.githubusercontent.com/FaridSafi/react-native-gifted-form/master/capture/signup.gif)
@@ -366,5 +366,3 @@ Pull requests are welcome
 ### License
 
 [MIT](LICENSE)
-
-Feel free to ask me questions on Twitter [@FaridSafi](https://www.twitter.com/FaridSafi) !
