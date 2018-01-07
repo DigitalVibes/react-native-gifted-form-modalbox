@@ -201,7 +201,11 @@ module.exports = createReactClass({
     this.props.onClose && this.props.onClose();
 
     if (this.props.closeModal !== null) {
-      this.props.closeModal();
+      let data = {
+        key: this.props.displayValue,
+        value: value || this.state.value
+      };
+      this.props.closeModal(data);
     }
   },
 
