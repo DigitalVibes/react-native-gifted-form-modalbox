@@ -114,7 +114,7 @@ module.exports = createReactClass({
                 style={{
                   width: 21,
                   marginLeft: 10,
-                  tintColor: '#097881',
+                  tintColor: '#ffffff',
                 }}
                 resizeMode={Image.resizeMode.contain}
                 source={require('../icons/close.png')}
@@ -139,7 +139,7 @@ module.exports = createReactClass({
               style={{
                 width: 21,
                 marginRight: 10,
-                tintColor: '#097881',
+                tintColor: '#ffffff',
               }}
               resizeMode={Image.resizeMode.contain}
               source={require('../icons/check.png')}
