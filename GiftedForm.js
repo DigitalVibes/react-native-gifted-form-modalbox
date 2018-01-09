@@ -44,7 +44,6 @@ const GiftedForm = createReactClass({
     NoticeWidget,
     GooglePlacesWidget,
     RowWidget,
-    RowValueWidget,
     LoadingWidget,
     HiddenWidget,
     ValidationErrorWidget,
