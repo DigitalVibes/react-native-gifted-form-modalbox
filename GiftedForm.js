@@ -18,7 +18,6 @@ const ModalWidget = require('./widgets/ModalWidget');
 const SubmitWidget = require('./widgets/SubmitWidget');
 const SeparatorWidget = require('./widgets/SeparatorWidget');
 const GroupWidget = require('./widgets/GroupWidget');
-const RowValueWidget = require('./widgets/RowValueWidget');
 const NoticeWidget = require('./widgets/NoticeWidget');
 const ValidationErrorWidget = require('./widgets/ValidationErrorWidget');
 const GooglePlacesWidget = require('./widgets/GooglePlacesWidget');
