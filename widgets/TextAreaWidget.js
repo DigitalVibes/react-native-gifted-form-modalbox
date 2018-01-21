@@ -29,7 +29,7 @@ module.exports = createReactClass({
           
           onFocus={() => this.props.onFocus(true)}
           onChangeText={this._onChange}
-          value={this.state.value}
+          value={this.state.value || this.props.form.props.value}
         />
       </View>
     );
