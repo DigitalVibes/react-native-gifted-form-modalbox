@@ -285,11 +285,11 @@ module.exports = createReactClass({
 
         style={this.getStyle('rowContainer')}
       >
-        <View style={this.getStyle('row')}>
+        <View style={[this.getStyle('row'), this.props.alignRightStyle]}>
           {this._renderImage()}
           <Text numberOfLines={1} style={this.getStyle('modalTitle')}>{this.props.title}</Text>
           <View style={this.getStyle('alignRight')}>
-            <Text numberOfLines={1} style={this.getStyle('modalValue')}>{this.props.value || this.state.value}</Text>
+            <Text numberOfLines={this.props.numberOfLines || 1} style={this.getStyle('modalValue')}>{this.props.value || this.state.value}</Text>
           </View>
           {this.renderDisclosure()}
         </View>
@@ -328,7 +328,7 @@ module.exports = createReactClass({
     },
     alignRight: {
       alignItems: 'flex-end',
-      // width: 110,
+      width: '60%',
     },
     modalValue: {
       fontSize: 15,
