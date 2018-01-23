@@ -285,10 +285,10 @@ module.exports = createReactClass({
 
         style={this.getStyle('rowContainer')}
       >
-        <View style={[this.getStyle('row'), this.props.alignRightStyle]}>
+        <View style={[this.getStyle('row'), this.props.rowStyle]}>
           {this._renderImage()}
           <Text numberOfLines={1} style={this.getStyle('modalTitle')}>{this.props.title}</Text>
-          <View style={this.getStyle('alignRight')}>
+          <View style={[this.getStyle('alignRight'), this.props.alignRightStyle]}>
             <Text numberOfLines={this.props.numberOfLines || 1} style={this.getStyle('modalValue')}>{this.props.value || this.state.value}</Text>
           </View>
           {this.renderDisclosure()}
