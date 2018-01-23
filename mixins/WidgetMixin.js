@@ -2,7 +2,8 @@ var React = require('react');
 import PropTypes from 'prop-types';
 var {
   Image
-} = require('react-native')
+} = require('react-native');
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 var GiftedFormManager = require('../GiftedFormManager');
@@ -212,6 +213,7 @@ module.exports = {
 
     const hasValidationErrors = this.state.validationErrorMessage !== null;
     const hasImageProp = this.props.image !== null;
+    const hasIconProp = this.props.icon !== null;
     const isOptionWidget = this.props.type === 'OptionWidget'
     const shouldShowValidationImage = this.props.validationImage === true;
 
@@ -236,6 +238,11 @@ module.exports = {
           resizeMode={Image.resizeMode.contain}
           source={this.props.image}
         />
+      );
+    } else if(hasIconProp) {
+      return (
+          <Icon name={this.props.icon} style={[{ paddingLeft: 10, minWidth: 45, fontSize: 24,
+            textAlign: 'left', color: this.props.tintColor, opacity: 0.8 }, this.props.iconStyles ] } />
       );
     }
 
