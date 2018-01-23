@@ -1,6 +1,6 @@
 {
   "name": "react-native-gifted-form-modalbox",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Form component for react-native",
   "main": "GiftedForm.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "apsl-react-native-button": "^3.0.0",
     "moment": "^2.14.1",
     "react-native-button": "^1.6.0",
+    "react-native-vector-icons": "4.4.2",
     "react-native-gifted-spinner": "^0.0.5",
     "react-native-google-places-autocomplete": "^1.2.0",
     "react-timer-mixin": "^0.13.3",
