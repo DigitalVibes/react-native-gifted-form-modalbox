@@ -287,9 +287,9 @@ module.exports = createReactClass({
       >
         <View style={[this.getStyle('row'), this.props.rowStyle]}>
           {this._renderImage()}
-          <Text numberOfLines={1} style={this.getStyle('modalTitle')}>{this.props.title}</Text>
+          <Text numberOfLines={1} style={[this.getStyle('modalTitle'), this.props.innerTitleTextStyle]}>{this.props.title}</Text>
           <View style={[this.getStyle('alignRight'), this.props.alignRightStyle]}>
-            <Text numberOfLines={this.props.numberOfLines || 1} style={this.getStyle('modalValue')}>{this.props.value || this.state.value}</Text>
+            <Text numberOfLines={this.props.numberOfLines || 1} style={[this.getStyle('modalValue'), this.props.innerValueTextStyle]}>{this.props.value || this.state.value}</Text>
           </View>
           {this.renderDisclosure()}
         </View>
